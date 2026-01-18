@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Petualangan Aturan di Rumah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+
+
+<div class="card">
+  <h1>🏠 Petualangan Aturan di Rumah</h1>
+  <p>Halo teman!  
+  Yuk ikut petualangan aturan di rumah ✨</p>
+
+  <button onclick="nextPage('aturan.html')">▶ Mulai</button>
+<button class="btn-start" onclick="playClick(); playMusic(); nextPage('aturan.html')">
+▶ Mulai
+<button class="btn-music" onclick="playClick(); toggleMusic()">
+🎵 Musik
+</button>
+
+</button>
+
+</div>
+
+<script src="script.js"></script>
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <img id="popup-img" src="" alt="popup image">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+<audio id="clickSound" src="sounds/click.mp4"></audio>
+<audio id="bgMusic" src="sounds/bg-music.mp3" loop></audio>
+<div id="star-container"></div>
+
+</body>
+</html>

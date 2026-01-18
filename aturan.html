@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Apa Itu Aturan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="aturan">
+
+<div class="card">
+  <h2>Apa itu Aturan?</h2>
+  <p>Aturan adalah hal yang harus kita patuhi.</p>
+
+  <button onclick="showInfo()">❓ Contoh</button>
+  <p id="info" class="hidden">Contoh: Membereskan mainan setelah bermain</p>
+
+  <button onclick="nextPage('contoh.html')">Lanjut ▶</button>
+</div>
+
+<script src="script.js"></script>
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <img id="popup-img" src="" alt="popup image">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+<audio id="bgMusic" src="sounds/bg-music.mp3" loop></audio>
+<div id="star-container"></div>
+
+</body>
+</html>

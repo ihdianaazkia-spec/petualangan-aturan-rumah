@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aturan di Rumah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contoh">
+
+
+<div class="card">
+  <h2>Ini aturan di rumahku!</h2>
+
+  <br><br>
+<button onclick="showPopup(
+  'Aku membereskan mainan!',
+  'images/popup-mainan.png'
+)">
+🧸 Membereskan Mainan
+</button>
+
+<button onclick="showPopup(
+  'Aku tidur tepat waktu!',
+  'images/popup-tidur.png'
+)">
+😴 Tidur Tepat Waktu
+</button>
+
+<button onclick="showPopup(
+  'Aku mencuci tangan!',
+  'images/popup-cuci.png'
+)">
+🧼 Mencuci Tangan
+</button>
+
+  <button onclick="nextPage('pilih.html')">Lanjut ▶</button>
+</div>
+
+<script src="script.js"></script>
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <img id="popup-img" src="" alt="popup image">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+<audio id="clickSound" src="sounds/click.mp4"></audio>
+<audio id="bgMusic" src="sounds/bg-music.mp3" loop></audio>
+<div id="star-container"></div>
+
+</body>
+</html>

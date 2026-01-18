@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Akibat Tidak Taat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="akibat">
+
+<div class="card">
+  <h2>Jika tidak taat aturan…</h2>
+
+  <button onclick="showAkibat()">Klik untuk melihat akibat</button>
+  <p id="akibat" class="hidden">
+    <button class="btn-bad" onclick="
+  playClick();
+  showPopup(
+    'Aduh... rumah jadi kotor 😢 Ayah dan Ibu jadi sedih 💔 Yuk, kita bereskan bersama 😊',
+    'images/popup-sedih.png'
+  )
+">
+Lihat Akibat
+</button>
+
+  </p>
+
+  <button onclick="nextPage('disiplin.html')">Lanjut ▶</button>
+</div>
+
+<script src="script.js"></script>
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <img id="popup-img" src="" alt="popup image">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+<audio id="clickSound" src="sounds/click.mp4"></audio>
+<audio id="bgMusic" src="sounds/bg-music.mp3" loop></audio>
+<div id="star-container"></div>
+
+</body>
+</html>

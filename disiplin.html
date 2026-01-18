@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aku Anak Disiplin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="disiplin">
+
+
+<div class="card">
+  <h2>Aku anak disiplin!</h2>
+  <p>✔ Tidur tepat waktu  
+     ✔ Membantu orang tua</p>
+
+  <button onclick="alert('Aku Bisa! 👍')">👍 Aku Bisa</button>
+  <button onclick="nextPage('kebiasaan.html')">Lanjut ▶</button>
+</div>
+
+<script src="script.js"></script>
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <img id="popup-img" src="" alt="popup image">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+<audio id="clickSound" src="sounds/click.mp4"></audio>
+<audio id="bgMusic" src="sounds/bg-music.mp3" loop></audio>
+<div id="star-container"></div>
+
+</body>
+</html>

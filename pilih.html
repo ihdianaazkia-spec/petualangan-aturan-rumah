@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ayo Pilih</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pilih">
+
+<div class="card">
+  <h2>Mana yang menaati aturan?</h2>
+
+  <button onclick="showPopup(
+  'Hebat! Kamu taat aturan 👍',
+  'images/popup-hebat.png'
+)">
+✅ Membereskan Mainan
+</button>
+
+<button onclick="showPopup(
+  'Coba lagi ya 😄',
+  'images/popup-sedih.png'
+)">
+❌ Meninggalkan Mainan
+</button>
+
+
+  <br><br>
+  <button onclick="nextPage('akibat.html')">Lanjut ▶</button>
+</div>
+
+<script src="script.js"></script>
+<!-- POPUP -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <img id="popup-img" src="" alt="popup image">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+<audio id="clickSound" src="sounds/click.mp4"></audio>
+<audio id="bgMusic" src="sounds/bg-music.mp3" loop></audio>
+<div id="star-container"></div>
+
+</body>
+</html>
