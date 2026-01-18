@@ -5,6 +5,12 @@ body {
 }
 
 button {
+  width: 90%;
+  max-width: 320px;
+  font-size: 20px;
+  padding: 16px;
+  margin: 12px auto;
+  display: block;
   font-size: 18px;
   padding: 14px 20px;
   margin: 10px;
@@ -179,5 +185,6 @@ body {
   padding: 20px;
   border-radius: 20px;
 }
+
 
 
