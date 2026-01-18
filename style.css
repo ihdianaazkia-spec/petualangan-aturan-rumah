@@ -10,7 +10,9 @@ button {
   font-size: 20px;
   padding: 16px;
   margin: 12px auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 18px;
   padding: 14px 20px;
   margin: 10px;
@@ -198,6 +200,7 @@ body {
     font-size: 22px;
   }
 }
+
 
 
 
